@@ -41,6 +41,10 @@ define smokeping::target (
     $nomasterpoll = false,
     $remark = '',
     $options = {},
+    $port = '',
+    $url = '',
+    $server = '',
+    $lookup = '',
 ) {
     validate_re( $name, '^[-_0-9a-zA-Z]+$', 'There is a very limited syntax permitted for target names (/[-_0-9a-zA-Z]+/)')
     validate_string( $pagetitle )
