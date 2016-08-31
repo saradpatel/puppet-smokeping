@@ -29,5 +29,17 @@ remark = <%= @remark %>
 <%= key %> = <%= value %>
 <%- end -%>
 <% end -%>
-
+<% if @port != '' then -%>
+port = <%= @port %>
+<% end -%>
+<% if @url != '' then -%>
+port = <%= @url %>
+<% end -%>
+<% if @server != '' then -%>
+port = <%= @server %>
+<% end -%>
+<% end -%>
+<% if @loolup != '' then -%>
+port = <%= @lookup %>
+<% end -%>
 
